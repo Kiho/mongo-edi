@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!-- Source: http://www.assembla.com/code/PPJCompiler/subversion/nodes/PPJCompiler/bin/Release/Pascal.xshd -->
+
+<!-- Syntaxdefinition for Pascal, by Ljudevit Habjanec -->
+<!-- PPJ projekt -->
+
+<SyntaxDefinition name = "Pascal" extensions = ".pas">
+	
+	<Digits name = "Digits"   bold = "false" italic = "false" color = "#A53117"/>
+	
+	<RuleSets>
+		<RuleSet ignorecase = "true">
+		
+			<Delimiters>~!@%^*()-+=|\#/{}[]:;"'&lt;&gt;,.?</Delimiters>
+			
+			<Span name = "STRING" bold = "false" italic = "false" color = "#820F00" stopateol = "true" escapecharacter='\'>
+				<Begin>'</Begin>
+				<End>'</End>
+			</Span>
+
+			<Span name = "BlockComment" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "#ABC507" stopateol = "false">
+				<Begin>{</Begin>
+				<End>}</End>
+			</Span>
+		
+			
+			<KeyWords name = "DataTypes" bold="false" italic="false" color="#3E4F4F">
+				<Key word = "integer" />
+				<Key word = "byte" />
+				<Key word = "real" />
+				<Key word = "boolean" />
+				<Key word = "char" />
+				<Key word = "shortint" />
+				<Key word = "word" />
+				<Key word = "longint" />
+				<Key word = "string" />
+			</KeyWords>
+			
+			<KeyWords name = "Operators" bold="false" italic="false" color="#4416A1">
+				<Key word = "and" />
+				<Key word = "not" />
+				<Key word = "or" />
+				<Key word = "in" />
+				<Key word = "div" />				
+				<Key word = "mod" />	
+			</KeyWords>
+
+									
+			<KeyWords name = "Statements" bold="false" italic="false" color="#0A55A3">
+				<Key word = "array" />
+				<Key word = "const" />
+				<Key word = "downto" />
+				<Key word = "file" />
+				<Key word = "forward" />
+				<Key word = "label" />
+				<Key word = "main" />
+				<Key word = "nil" />
+				<Key word = "packed" />
+				<Key word = "record" />
+				<Key word = "repeat" />
+				<Key word = "set" />
+				<Key word = "to" />
+				<Key word = "type" />
+				<Key word = "until" />
+				<Key word = "var" />
+				<Key word = "begin" />
+				<Key word = "case" />
+				<Key word = "do" />
+				<Key word = "else" />
+				<Key word = "for" />
+				<Key word = "function" />
+				<Key word = "goto" />
+				<Key word = "if" />
+				<Key word = "procedure" />
+				<Key word = "program" />
+				<Key word = "then" />
+				<Key word = "of" />
+				<Key word = "end" />
+				<Key word = "while" />
+				<Key word = "with" />
+			</KeyWords>
+			
+			<KeyWords name = "FunctionKeywords" bold="false" italic="false" color="#193D55">
+				<Key word = "abs" />
+				<Key word = "arctan" />								
+				<Key word = "chr" />
+				<Key word = "cos" />
+				<Key word = "dispose" />
+				<Key word = "eof" />
+				<Key word = "eoln" />
+				<Key word = "exp" />
+				<Key word = "false" />
+				<Key word = "get" />
+				<Key word = "input" />				
+				<Key word = "ln" />
+				<Key word = "maxint" />
+				<Key word = "new" />
+				<Key word = "odd" />
+				<Key word = "ord" />
+				<Key word = "output" />
+				<Key word = "page" />
+				<Key word = "pred" />
+				<Key word = "put" />
+				<Key word = "read" />
+				<Key word = "readln" />
+				<Key word = "reset" />
+				<Key word = "rewrite" />
+				<Key word = "round" />
+				<Key word = "sin" />
+				<Key word = "sqr" />
+				<Key word = "sqrt" />
+				<Key word = "succ" />
+				<Key word = "text" />
+				<Key word = "true" />
+				<Key word = "trunc" />
+				<Key word = "write" />
+				<Key word = "writeln" />
+			</KeyWords>
+			
+			<KeyWords name = "Punctuation" bold = "false" italic = "false" color = "#2B877E">				
+				<Key word = "," />
+				<Key word = "." />
+				<Key word = ";" />
+				<Key word = "(" />
+				<Key word = ")" />
+				<Key word = "[" />
+				<Key word = "]" />
+				<Key word = "+" />
+				<Key word = "-" />
+				<Key word = "/" />
+				<Key word = "%" />
+				<Key word = "*" />
+				<Key word = "&lt;" />
+				<Key word = "&gt;" />
+				<Key word = "^" />
+				<Key word = "=" />
+				<Key word = ":=" />				
+				<Key word = "!" />				
+				<Key word = "|" />				
+		  </KeyWords>	
+		  
+		</RuleSet>		
+		
+		<RuleSet name = "CommentMarkerSet" ignorecase = "false">
+		  	<Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+			<KeyWords name = "ErrorWords" bold="true" italic="false" color="#820F00">
+				<Key word = "TODO" />
+				<Key word = "FIXME" />
+	 	 	</KeyWords>
+			<KeyWords name = "WarningWords" bold="true" italic="false" color="#EEE0E000">
+				<Key word = "HACK" />
+				<Key word = "UNDONE" />
+	 	 	</KeyWords>
+		</RuleSet>
+		
+	</RuleSets>
+</SyntaxDefinition>

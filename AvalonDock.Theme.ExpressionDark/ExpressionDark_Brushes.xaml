@@ -1,0 +1,304 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Page.Resources>
+    <!-- AvalonDock VS2010 Brushes -->
+    <DrawingBrush x:Key="AvalonDock_ThemeVS2010_BaseColor1" 
+                  TileMode="Tile"  
+                Viewport="0 0 5 5" 
+				ViewportUnits="Absolute" 
+				Stretch="None">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#FF595959">
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry Rect="0,0,10,10"/>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Pen>
+                        <Pen Thickness="1" Brush="#FF393939" />
+                    </GeometryDrawing.Pen>
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <LineGeometry StartPoint="0,0" EndPoint="10,10" />
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Pen>
+                        <Pen Thickness="1" Brush="#FF595959" />
+                    </GeometryDrawing.Pen>
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <LineGeometry StartPoint="1,0" EndPoint="10,9" />
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor2"  Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor3" Color="White" />
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor4" Color="Transparent"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor5" Color="#FF434343"/>
+    
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor6"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#502d2d2d" Offset="0" />
+            <GradientStop Color="#502d2d2d" Offset="0.5" />
+            <GradientStop Color="#50232323" Offset="0.5" />
+            <GradientStop Color="#5000030d" Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor7"
+                         StartPoint="0,1"
+                         EndPoint="0,0">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FF2b2b2b" Offset="0" />
+            <GradientStop Color="#FF232323" Offset="0.1" />
+            <GradientStop Color="#FF202020" Offset="0.5" />
+            <GradientStop Color="#FF272727" Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor8" Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor9" Color="#FF0a0b15"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor10"  Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor11"  Color="#FF3e3e3e" />
+
+    <!--<SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor12" Color="Black"/>-->
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor13" Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor14" Color="Black"/>
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor15"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <GradientStop Color="#dddddd" Offset="0" />
+        <GradientStop Color="#00030d" Offset="0.5" />
+        <GradientStop Color="#2d2d2d" Offset="0.5" />
+        <GradientStop Color="#2d2d2d" Offset="1" />
+    </LinearGradientBrush>
+
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor16"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <GradientStop Color="#989898" Offset="0" />
+        <GradientStop Color="#a5a5a5" Offset="1" />
+    </LinearGradientBrush>
+
+    <!--<SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor17" 
+        Color="White"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor18" 
+        Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor20" 
+                     Color="White"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor21" 
+        Color="White"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor22" 
+        Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor23" 
+        Color="Black"/>-->
+
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor24" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#040303" Offset="0" />
+        <GradientStop Color="#222222" Offset="0.5" />
+        <GradientStop Color="#222222" Offset="0.5" />
+        <GradientStop Color="#ced4df" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor25" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#070707" Offset="0" />
+        <GradientStop Color="#232323" Offset="0.5" />
+        <GradientStop Color="#2d2d2d" Offset="0.5" />
+        <GradientStop Color="#2d2d2d" Offset="1" />
+    </LinearGradientBrush>
+
+    <!--<LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor26" StartPoint="0,0" EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#50FFE8A6" Offset="0" />
+            <GradientStop Color="#50FFE8A6" Offset="0.5" />
+            <GradientStop Color="#50FFEDBA" Offset="0.5" />
+            <GradientStop Color="#50FFFCF2" Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="AvalonDock_ThemeVS2010_BaseColor27"
+                         StartPoint="0,0" EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#50FFE8A6" Offset="0" />
+            <GradientStop Color="#50FFE8A6" Offset="0.5" />
+            <GradientStop Color="#50FFEDBA" Offset="0.5" />
+            <GradientStop Color="#50FFFCF2" Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>-->
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor28" Color="Black"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor30" Color="#292929"/>
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor31" Color="#2d2d2d"/>
+
+    <!--<SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor32"
+                     Color="Transparent"/>-->
+
+    <SolidColorBrush x:Key="AvalonDock_ThemeVS2010_BaseColor33" Color="#a5a5a5"/>
+    
+    <!-- Edi VS 2010 Brushes -->
+
+  <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888888"/>
+
+  <SolidColorBrush x:Key="EditorCurrentLineBackgroundColor" Color="#10f4de50"/>
+
+  <!-- Brushes -->
+  <SolidColorBrush x:Key="TextEditorLineNumbersForegroundColor" Color="White"/>
+
+  <SolidColorBrush x:Key="ToolWindowBackground" Color="Black" />
+
+  <SolidColorBrush x:Key="LineNumbersForeground" Color="#FF5f5f5f" />
+
+  <LinearGradientBrush x:Key="ListViewItemMouseOverGradient" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#00030d" Offset="0" />
+    <GradientStop Color="#232323" Offset="0.5" />
+    <GradientStop Color="#2d2d2d" Offset="0.5" />
+    <GradientStop Color="#2d2d2d" Offset="1" />
+  </LinearGradientBrush>
+
+  <SolidColorBrush x:Key="ListViewItemMouseOverBorder" Color="#3d3d3d"/>
+
+  <SolidColorBrush x:Key="SeperatorForeground" Color="#FF808080"/>
+  <SolidColorBrush x:Key="SeperatorBorderBrush" Color="#6c6c6c"/>
+
+  <LinearGradientBrush x:Key="ContextMenuBackground" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#141414" Offset="0" />
+    <GradientStop Color="#262626" Offset="1" />
+  </LinearGradientBrush>
+
+  <SolidColorBrush x:Key="ContextMenuBorderBrush" Color="#FF565656"/>
+
+  <SolidColorBrush x:Key="ToolBarTrayBackground" Color="#515151"/>
+
+  <SolidColorBrush x:Key="ToolBarBackground" Color="#353535"/>
+
+  <LinearGradientBrush x:Key="MenuBackground" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#2b2b2b" Offset="0" />
+    <GradientStop Color="#424242" Offset="1" />
+  </LinearGradientBrush>
+
+  <SolidColorBrush x:Key="MenuItemForegroundEnabled" Color="White"/>
+  <SolidColorBrush x:Key="MenuItemForegroundDisabled" Color="#888888"/>
+  <SolidColorBrush x:Key="SubMenuBorderBrush" Color="#888888"/>
+
+  <LinearGradientBrush x:Key="HighlightMenuItemGradient" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#070707" Offset="0" />
+    <GradientStop Color="#232323" Offset="0.5" />
+    <GradientStop Color="#2d2d2d" Offset="0.5" />
+    <GradientStop Color="#2d2d2d" Offset="1" />
+  </LinearGradientBrush>
+
+  <SolidColorBrush x:Key="HyperlinkForegroundDisabled" Color="#88888888"/>
+  <SolidColorBrush x:Key="HyperlinkForeground" Color="White"/>
+
+  <SolidColorBrush x:Key="PinableListViewForegroundDisabled" Color="#88888888"/>
+  <SolidColorBrush x:Key="PinableListViewBackground" Color="Black"/>
+    </Page.Resources>
+  
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor1" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor1}" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor2" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor2}" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor3" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor3}" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor4" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor4}" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor5" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor5}" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor6" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor6}" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor7" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor7}" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor8" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor8}" Grid.Column="2" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor9" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor9}" Grid.Column="3" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor10" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor10}" Grid.Column="4" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"  />
+
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor11" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor11}" Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor13" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor13}" Grid.Column="1" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor14" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor14}" Grid.Column="2" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor15" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor15}" Grid.Column="3" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor16" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor16}" Grid.Column="4" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor24" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor24}" Grid.Column="0" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor25" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor25}" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor28" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor28}" Grid.Column="2" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor30" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor30}" Grid.Column="3" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor31" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor31}" Grid.Column="4" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+
+    <Label Content="AvalonDock_ThemeVS2010_BaseColor33" Background="{StaticResource AvalonDock_ThemeVS2010_BaseColor33}" Grid.Column="0" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    <Label Content="DisabledForegroundBrush" Background="{StaticResource DisabledForegroundBrush}" Grid.Column="1" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="EditorCurrentLineBackgroundColor" Background="{StaticResource EditorCurrentLineBackgroundColor}" Grid.Column="2" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="TextEditorLineNumbersForegroundColor" Background="{StaticResource TextEditorLineNumbersForegroundColor}" Grid.Column="3" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Foreground="Black" />
+    <Label Content="ToolWindowBackground" Background="{StaticResource ToolWindowBackground}" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+
+    <Label Content="DisabledForegroundBrush" Background="{StaticResource DisabledForegroundBrush}" Grid.Column="0" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="EditorCurrentLineBackgroundColor" Background="{StaticResource EditorCurrentLineBackgroundColor}" Grid.Column="1" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="TextEditorLineNumbersForegroundColor" Background="{StaticResource TextEditorLineNumbersForegroundColor}" Grid.Column="2" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Foreground="White" />
+    <Label Content="ToolWindowBackground" Background="{StaticResource ToolWindowBackground}" Grid.Column="3" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="LineNumbersForeground" Background="{StaticResource LineNumbersForeground}" Grid.Column="4" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+
+    <Label Content="ListViewItemMouseOverGradient" Background="{StaticResource ListViewItemMouseOverGradient}" Grid.Column="0" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="ListViewItemMouseOverBorder" Background="{StaticResource ListViewItemMouseOverBorder}" Grid.Column="1" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="SeperatorForeground" Background="{StaticResource SeperatorForeground}" Grid.Column="2" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="SeperatorBorderBrush" Background="{StaticResource SeperatorBorderBrush}" Grid.Column="3" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="ContextMenuBackground" Background="{StaticResource ContextMenuBackground}" Grid.Column="4" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+
+    <Label Content="ContextMenuBorderBrush" Background="{StaticResource ContextMenuBorderBrush}" Grid.Column="0" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="ToolBarTrayBackground" Background="{StaticResource ToolBarTrayBackground}" Grid.Column="1" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="ToolBarBackground" Background="{StaticResource ToolBarBackground}" Grid.Column="2" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="MenuBackground" Background="{StaticResource MenuBackground}" Grid.Column="3" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="MenuItemForegroundEnabled" Background="{StaticResource MenuItemForegroundEnabled}" Grid.Column="4" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" />
+
+    <Label Content="MenuItemForegroundDisabled" Background="{StaticResource MenuItemForegroundDisabled}" Grid.Column="0" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="SubMenuBorderBrush" Background="{StaticResource SubMenuBorderBrush}" Grid.Column="1" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="HighlightMenuItemGradient" Background="{StaticResource HighlightMenuItemGradient}" Grid.Column="2" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="HyperlinkForegroundDisabled" Background="{StaticResource HyperlinkForegroundDisabled}" Grid.Column="3" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"  />
+    <Label Content="HyperlinkForeground" Background="{StaticResource HyperlinkForeground}" Grid.Column="4" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+    <Label Content="PinableListViewForegroundDisabled" Background="{StaticResource PinableListViewForegroundDisabled}" Grid.Column="0" Grid.Row="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  />
+
+    <Label Content="PinableListViewBackground" Background="{StaticResource PinableListViewBackground}" Grid.Column="1" Grid.Row="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" />
+
+  </Grid>
+</Page>

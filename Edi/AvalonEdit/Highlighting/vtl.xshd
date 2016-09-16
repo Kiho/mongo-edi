@@ -1,0 +1,53 @@
+<!--
+  Syntax Highlighting Definitions for the Velocity Template Language (VTL).
+  See also: http://velocity.apache.org/engine/releases/velocity-1.7/vtl-reference-guide.html
+-->
+<SyntaxDefinition name="VTL" extensions=".vtl;.vm"
+     xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+
+  <Color name="Digits" fontStyle="italic" fontWeight="normal" foreground="Blue" />
+  <Color name="String" foreground="Olive" exampleText="string text = &quot;Hello, World!&quot;"/>
+  <Color name="String2" foreground="Red" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <Color name="Comment"  foreground="Green" exampleText="string text = &quot;Hello, World!&quot;"/>
+  <Color name="Keywords" foreground="Blue" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <Color name="Punctuation" foreground="Red" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <RuleSet ignoreCase="true">
+
+    <Span color="String" multiline="false" >
+      <Begin>'</Begin>
+      <End>'</End>
+    </Span>
+
+    <Span color="String2" multiline="false"  >
+      <Begin>"</Begin>
+      <End>"</End>
+    </Span>
+
+    <Span  color="Comment" multiline="false">
+	  <Begin>\#\#</Begin>
+	</Span>
+
+    <Span color="Comment"  multiline="true">
+      <Begin>\#\*</Begin>
+      <End>\*\#</End>
+    </Span>
+
+    <Span  color="Keywords" multiline="false">
+	  <Begin>\#</Begin>
+	  <End>set|if|elseif|else|end|foreach|include|parse|stop|break|evaluate|define|macro</End>
+	</Span>
+
+    <Rule color="Punctuation">
+      [?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+
+    </Rule>
+
+    <Rule color="Digits">
+      [?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+[0-9]+[ ?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+\n
+    </Rule>
+
+  </RuleSet>
+
+</SyntaxDefinition>

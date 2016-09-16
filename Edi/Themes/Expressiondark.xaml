@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    
+                    xmlns:dialogs="clr-namespace:Edi.View.Dialogs"
+                    >
+
+  <Style TargetType="dialogs:GotoLineDlg" >
+    <Setter Property="Background" Value="Black"/>
+  </Style>
+
+  <Style TargetType="dialogs:FindReplaceDialog">
+    <Setter Property="Background" Value="Black"/>
+  </Style>
+
+  <Style TargetType="dialogs:ConfigDlg">
+    <Setter Property="Background" Value="Black"/>
+  </Style>
+
+</ResourceDictionary>

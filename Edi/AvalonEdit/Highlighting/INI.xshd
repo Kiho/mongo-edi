@@ -1,0 +1,82 @@
+<!--
+  See also: http://en.wikipedia.org/wiki/INI_file
+
+  The INI file format is an informal standard for configuration files for some platforms or software.
+  INI files are simple text files with a basic structure composed of "sections" and "properties".
+
+  They are a deprecated standard on the Windows operating system. The use of the "INI file" has been
+  changed in Windows in favor of the registry, and deprecated in .NET in favor of XML .config files.
+  The name "INI file" comes from the filename extension usually used, ".INI", that stands for "initialization".
+  Sometimes a different file extension will be used instead of .ini, such as ".CFG", ".conf", or ".TXT".
+-->
+<SyntaxDefinition name="INI" extensions=".cfg;.conf;.ini;.iss;"
+     xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+
+  <Color name="Digits" fontStyle="italic" fontWeight="normal" foreground="Blue" />
+  <Color name="String" foreground="Olive" exampleText="string text = &quot;Hello, World!&quot;"/>
+  <Color name="String2" foreground="Red" exampleText="string text = &quot;Hello, World!&quot;"/>
+  <Color name="Comment" foreground="Green" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <Color name="Section" foreground="Purple" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <Color name="PropertyName" foreground="Blue" exampleText="string text = &quot;Hello, World!&quot;"/>
+  <!-- Color name="PropertyValue" foreground="Purple" exampleText="string text = &quot;Hello, World!&quot;"/ -->
+
+  <Color name="Punctuation" foreground="Red" exampleText="string text = &quot;Hello, World!&quot;"/>
+
+  <RuleSet ignoreCase="true">
+
+    <Span color="String" multiline="false" >
+      <Begin>'</Begin>
+      <End>'</End>
+    </Span>
+
+    <Span color="String2" multiline="false"  >
+      <Begin>"</Begin>
+      <End>"</End>
+    </Span>
+
+    <!-- span for escape sequences -->
+    <Span  color="Comment" multiline="false">
+	  <Begin>;</Begin>
+	</Span>
+    <Span  color="Comment" multiline="false">
+	  <Begin>\#</Begin>
+	</Span>
+    <!--Span color="Comment"  multiline="true">
+      <Begin>/\*</Begin>
+      <End>\*/</End>
+    </Span -->
+
+   <Span  color="Section" multiline="false">
+    <Begin>\[</Begin>
+    <End>\]</End>
+   </Span>
+
+   <Span  color="PropertyName" multiline="false">
+    <Begin>^[0-9A-Z\-]+</Begin>
+    <End>=</End>
+   </Span>
+
+   <!-- Span  color="PropertyValue" multiline="false">
+    <Begin>=</Begin>
+    <End>\n</End>
+   </Span -->
+
+    <!-- Keywords fontWeight="bold" foreground="Blue">
+      <Word>BUG</Word>
+	  <Word>HACK</Word>
+      <Word>TODO</Word>
+    </Keywords -->
+
+    <Rule color="Punctuation">
+      [?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+
+    </Rule>
+
+    <Rule color="Digits">
+      [?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+[0-9]+[ ?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+\n
+    </Rule>
+
+  </RuleSet>
+
+</SyntaxDefinition>

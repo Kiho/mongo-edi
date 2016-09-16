@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Edi.View.EdiView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  
+             xmlns:cmd="clr-namespace:Edi"
+
+             xmlns:local="clr-namespace:Edi.View"
+             xmlns:vm="clr-namespace:Edi.ViewModel"
+             xmlns:behav="clr-namespace:Edi.Behaviour"
+             
+             xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="300"             
+             d:DataContext="{d:DesignInstance Type=vm:EdiViewModel, IsDesignTimeCreatable=True}"
+             >
+  <avalonEdit:TextEditor
+              x:Name="textEditor"
+              Document="{Binding Document, UpdateSourceTrigger=PropertyChanged}"
+              FontFamily="Consolas"
+
+              FontSize="{Binding Path=FontSize, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+              Options="{Binding Path=Options, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+              SyntaxHighlighting="{Binding Path=SyntaxHighlighting, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+
+              WordWrap="{Binding Path=WordWrap, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+              ShowLineNumbers="{Binding Path=ShowLineNumbers, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+              IsReadOnly="{Binding Path=IsReadOnly, RelativeSource={RelativeSource FindAncestor, AncestorType=local:EdiView, AncestorLevel=1}}"
+
+              IsModified="{Binding Path=IsDirty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+              >
+    <avalonEdit:TextEditor.ContextMenu>
+        <ContextMenu>
+          <MenuItem Command="Cut" Header="Cut">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Cut}" Height="16"/>
+          </MenuItem.Icon>
+          </MenuItem>
+          <MenuItem Command="Copy" Header="Copy">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Copy}" Height="16"/>
+          </MenuItem.Icon>
+        </MenuItem>
+          <MenuItem Command="Paste" Header="Paste">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Paste}" Height="16"/>
+          </MenuItem.Icon>
+        </MenuItem>
+          <MenuItem Command="Delete" Header="Delete">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Delete}" Height="16"/>
+          </MenuItem.Icon>
+        </MenuItem>
+        <Separator />
+        <MenuItem Command="cmd:AppCommand.SelectAll" Header="Select All"
+                  ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}"/>
+        <Separator />
+        <MenuItem Command="Undo" Header="Undo">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Undo}" Height="16"/>
+          </MenuItem.Icon>
+        </MenuItem>
+          <MenuItem Command="Redo" Header="Redo">
+          <MenuItem.Icon>
+            <Image Source="{StaticResource Image_Redo}" Height="16"/>
+          </MenuItem.Icon>
+        </MenuItem>
+        </ContextMenu>
+      </avalonEdit:TextEditor.ContextMenu>
+    </avalonEdit:TextEditor>
+</UserControl>

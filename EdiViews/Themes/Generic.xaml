@@ -1,0 +1,10 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/EdiViews;component/GotoLine/GotoLineView.xaml"/>
+    <ResourceDictionary Source="/EdiViews;component/FindReplace/FindReplaceView.xaml"/>
+    <ResourceDictionary Source="/EdiViews;component/AppConfig/AppConfigView.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

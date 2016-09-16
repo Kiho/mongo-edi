@@ -1,0 +1,111 @@
+﻿<Window x:Class="MsgBoxSamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="WPF MessageBox sample"
+        SizeToContent="WidthAndHeight">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <StackPanel Margin="10">
+      <TextBlock TextWrapping="Wrap">
+                <Run Text="Demonstrates the usage of the WPF message box." />
+      </TextBlock>
+      <TextBlock TextWrapping="Wrap">
+                <Run Text="Click the button to invoke a sample message box" />
+      </TextBlock>
+    </StackPanel>
+    <Grid Grid.Row="1" Margin="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+
+      <TextBlock Text="Message box with only message" VerticalAlignment="Center" Margin="3" />
+      <Button Height="24" Width="90" Content="Sample 1" Margin="3" 
+                Grid.Row="0" HorizontalAlignment="Left" Grid.Column="1" 
+                VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with title and message" VerticalAlignment="Center" Margin="3" Grid.Row="1" />
+      <Button Height="24" Width="90" Content="Sample 2" Margin="3" Grid.Row="1" 
+                HorizontalAlignment="Left" Grid.Column="1" 
+                VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with YES, NO button" VerticalAlignment="Center" Margin="3" Grid.Row="2" />
+      <Button Height="24" Width="90" Content="Sample 3" Margin="3" Grid.Row="2" 
+                HorizontalAlignment="Left" Grid.Column="1" 
+                VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with OK Button and details" VerticalAlignment="Center" Margin="3" Grid.Row="3" />
+      <Button Height="24" Width="90" Content="Sample 4" Margin="3" Grid.Row="3" 
+                HorizontalAlignment="Left" Grid.Column="1" 
+                VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question" VerticalAlignment="Center" Margin="3" Grid.Row="4" />
+      <Button Height="24" Width="90" Content="Sample 5" Margin="3" Grid.Row="4" 
+                HorizontalAlignment="Left" Grid.Column="1" 
+                VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question and No Default button" VerticalAlignment="Center" Margin="3" Grid.Row="5" />
+      <Button Height="24" Width="90" Content="Sample 6" Margin="3" Grid.Row="5" 
+                      HorizontalAlignment="Left" Grid.Column="1" 
+                      VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question, No default button, and Hyperlink" VerticalAlignment="Center" Margin="3" Grid.Row="6" />
+      <Button Height="24" Width="90" Content="Sample 7" Margin="3" Grid.Row="6" 
+                            HorizontalAlignment="Left" Grid.Column="1" 
+                            VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question, No default button, and Custom Hyperlink Navigation"
+                       TextWrapping="WrapWithOverflow"
+                       VerticalAlignment="Center" Margin="3" Grid.Row="7" />
+      <Button Height="24" Width="90" Content="Sample 8" Margin="3" Grid.Row="7" 
+                                  HorizontalAlignment="Left" Grid.Column="1" 
+                                  VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question (OK, Cancel) and NO Copy Message button"
+                             TextWrapping="WrapWithOverflow"
+                             VerticalAlignment="Center" Margin="3" Grid.Row="8" />
+      <Button Height="24" Width="90" Content="Sample 9" Margin="3" Grid.Row="8" 
+                                        HorizontalAlignment="Left" Grid.Column="1" 
+                                        VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question and NO Default button"
+                                   TextWrapping="WrapWithOverflow"
+                                   VerticalAlignment="Center" Margin="3" Grid.Row="9" />
+      <Button Height="24" Width="90" Content="Sample 10" Margin="3" Grid.Row="9" 
+                                              HorizontalAlignment="Left" Grid.Column="1" 
+                                              VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Message box with Question and NO Default button"
+                                         TextWrapping="WrapWithOverflow"
+                                         VerticalAlignment="Center" Margin="3" Grid.Row="10" />
+      <Button Height="24" Width="90" Content="Sample 11" Margin="3" Grid.Row="10" 
+                                                    HorizontalAlignment="Left" Grid.Column="1" 
+                                                    VerticalAlignment="Center" Click="Button_Click" />
+
+      <TextBlock Text="Working with exceptions"
+                       TextWrapping="WrapWithOverflow"
+                       VerticalAlignment="Center" Margin="3" Grid.Row="11" />
+      <Button Height="24" Width="90" Content="Sample 12" Margin="3" Grid.Row="11" 
+                                                          HorizontalAlignment="Left" Grid.Column="1" 
+                                                          VerticalAlignment="Center" Click="Button_Click" />
+    </Grid>
+  </Grid>
+</Window>
