@@ -19,7 +19,7 @@ namespace Edi.ViewModel
 
         private bool IsOutputFile(string fileName)
         {
-            return fileName.ToLower() != outFileName.ToLower();
+            return fileName.ToLower() == outFileName.ToLower();
         }
 
         internal bool OnRunScript(EdiViewModel fileToRun, bool saveAsFlag = true)
