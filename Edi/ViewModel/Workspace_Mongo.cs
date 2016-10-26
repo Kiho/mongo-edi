@@ -41,6 +41,12 @@ namespace Edi.ViewModel
                     MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 return false;
             }
+            if (IsOutputFile(fileToRun.FileName))
+            {
+                MessageBox.Show("Please selct script to run.", "Status",
+                    MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return false;
+            }
 
             start.FileName = target.Executable;
             start.Arguments = target.Arguments + "\"" + fileToRun.FilePath + "\"";
@@ -87,8 +93,6 @@ namespace Edi.ViewModel
                 vm = EdiViewModel.LoadFile(outFilePath);
                 this.mFiles.Add(vm);
                 var outputContent = firstPanel.Children.Last();
-                // var layoutContent = firstPanel.Children.First();
-                // Console.WriteLine(outputContent.ContentId);
                 var layOutPanel = paneGroup.Parent as LayoutPanel;
                 if (layOutPanel != null)
                 {

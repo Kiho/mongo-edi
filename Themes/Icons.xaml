@@ -19,7 +19,7 @@
 
   <BitmapImage x:Key="Image_Space" UriSource="pack://application:,,,/Themes;component/Images/App/ShowSpaces32.png" />
   <BitmapImage x:Key="Image_Tabs" UriSource="pack://application:,,,/Themes;component/Images/App/ShowTab32.png" />
-  <BitmapImage x:Key="Image_Run" UriSource="pack://application:,,,/Themes;component/Images/App/Run.png" />
+  <BitmapImage x:Key="Image_Run" UriSource="pack://application:,,,/Themes;component/Images/App/Run32.png" />
 
   <BitmapImage x:Key="Image_EditFind" UriSource="pack://application:,,,/Themes;component/Images/App/Edit_Find32.png" />
   <BitmapImage x:Key="Image_EditIcon" UriSource="pack://application:,,,/Themes;component/Images/App/Edit_Find16.ico" />
